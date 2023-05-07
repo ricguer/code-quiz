@@ -84,3 +84,14 @@ a {
 .hidden-question {
     display: none;
 }
+
+#answerResult {
+    visibility: hidden;
+    display: flex;
+    width: 100%;
+    align-items: flex-start;
+    font-style: italic;
+    color: #c0c0c0;
+    border-top: 2px solid #C0C0C0;
+    margin-top: 20px;
+}
