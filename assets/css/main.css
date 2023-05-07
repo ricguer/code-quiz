@@ -42,7 +42,7 @@ main {
 }
 
 main h1 {
-    font-size: xxx-large;
+    font-size: xx-large;
     margin-bottom: 5px;
 }
 
@@ -58,4 +58,29 @@ a {
 
 #viewScoresLink {
     color: #b852e6;
+}
+
+.answers {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+}
+
+.answer-choices {
+    font-size: large;
+    text-align: left;
+    width: 200px;
+    height: 40px;
+    margin: 5px;
+    padding-left: 20px;
+}
+
+#quiz-main {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.hidden-question {
+    display: none;
 }
