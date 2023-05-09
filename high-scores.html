@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>High Scores</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/main.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/high-scores.css">
+</head>
+<body>
+    <header>
+        <a id="viewScoresLink" href="high-scores.html">View High Scores</a>
+        <div id="quiz-timer">
+            <p>Time: 0</p>
+        </div>
+    </header>
+    <main id="high-scores-main">
+        <h1>High Scores</h1>
+        <ol id="high-score-list"></ol>
+        <div>
+            <button onclick="window.location.href='./index.html'">Go Back</button>
+            <button id="clear-high-scores-btn">Clear High Scores</button>
+        </div>
+    </main>
+    <script src="assets/js/high-scores.js"></script>
+</body>
+</html>
