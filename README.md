@@ -20,4 +20,4 @@ Timed coding quiz of multiple choice questions. The quiz is timed from the momen
 ## Deploy
 This project can be visited by clicking on the following link:
 
-
+https://ricguer.github.io/code-quiz/
