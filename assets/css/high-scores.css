@@ -1,0 +1,27 @@
+                                                                /* ============== HIGH SCORE PAGE STYLES ============== */
+#high-scores-main {
+    display: flex;
+    align-items: flex-start;
+}
+
+#high-socres-main div {
+    display: flex;
+}
+
+#high-scores-main div button {
+    font-size: large;
+}
+
+#high-score-list {
+    width: 100%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    padding: 2%;
+    background-color: #d9d3e9;
+    list-style: none;
+}
+
+#high-score-list li {
+    font-size: x-large;
+}
+

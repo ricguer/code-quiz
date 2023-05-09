@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Quiz Results</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/main.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/results.css">
+</head>
+<body>
+    <header>
+        <a id="viewScoresLink" href="high-scores.html">View High Scores</a>
+        <div id="quiz-timer">
+            <p>Time: 0</p>
+        </div>
+    </header>
+    <main id="results-main">
+        <h1>All done!</h1>
+        <p id="finalScoreNotice">Your final score is 0.</p>
+        <form id="initialSubmissionForm">
+            <label for="userInitials">Enter initials:</label>
+            <input type="text" name="initials" id="userInitials">
+            <button id="initialSubmitBtn" type="submit">Submit</button>
+        </form>
+    </main>
+    <script src="./assets/js/results.js"></script>
+</body>
+</html> 

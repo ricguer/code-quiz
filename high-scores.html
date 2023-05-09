@@ -3,9 +3,10 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Coding Quiz Challenge</title>
+    <title>High Scores</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/main.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/high-scores.css">
 </head>
 <body>
     <header>
@@ -14,12 +15,14 @@
             <p>Time: 0</p>
         </div>
     </header>
-    <main>
-        <h1>Coding Quiz Challenge</h1>
-        <p>Try to answer all the code-related questions within the time limit. <br> Keep in 
-            mind that incorrect answers wil penalize your score/time by ten seconds!
-        </p>
-        <button id="start-quiz-btn" onclick="window.location.href='quiz.html'">Start Quiz</button>
+    <main id="high-scores-main">
+        <h1>High Scores</h1>
+        <ol id="high-score-list"></ol>
+        <div>
+            <button onclick="window.location.href='./index.html'">Go Back</button>
+            <button id="clear-high-scores-btn">Clear High Scores</button>
+        </div>
     </main>
+    <script src="assets/js/high-scores.js"></script>
 </body>
 </html>

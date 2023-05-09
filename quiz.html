@@ -1,111 +1,70 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Coding Quiz</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='./assets/css/main.css'>
-    <script src='assets/js/main.js'></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/main.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/quiz.css">
 </head>
 <body>
     <header>
-        <a id="viewScoresLink" href="highscores.html">View High Scores</a>
+        <a id="viewScoresLink" href="high-scores.html">View High Scores</a>
         <div id="quiz-timer">
             <p>Time: 0</p>
         </div>
     </header>
     <main id="quiz-main">
-        <div id="question-1">
-            <h2 class="question">Question</h2>
+        <div id="question-1" class="question-answer">
+            <h2 class="question">Commonly used data types DO NOT include:</h2>
             <div class="answers">
-                <button id="answer-choice-1" class="answer-choices">1. answer</button>
-                <button id="answer-choice-2" class="answer-choices">2. answer</button>
-                <button id="answer-choice-3" class="answer-choices">3. answer</button>
-                <button id="answer-choice-4" class="answer-choices">4. answer</button>
+                <button data-answer="Wrong">1. strings</button>
+                <button data-answer="Wrong">2. booleans</button>
+                <button data-answer="Right">3. alerts</button>
+                <button data-answer="Wrong">4. numbers</button>
             </div>
         </div>
-        <div id="question-2" class="hidden-question">
-            <h2 class="question">Question</h2>
+        <div id="question-2" class="hidden-question question-answer">
+            <h2 class="question">The condition in an if / else statement is enclosed with ________.</h2>
             <div class="answers">
-                <button class="answer-choice-1" class="answer-choices">1. answer</button>
-                <button class="answer-choice-2" class="answer-choices">2. answer</button>
-                <button class="answer-choice-3" class="answer-choices">3. answer</button>
-                <button class="answer-choice-4" class="answer-choices">4. answer</button>
+                <button data-answer="Wrong">1. quotes</button>
+                <button data-answer="Wrong">2. curly brackets</button>
+                <button data-answer="Right">3. parenthesis</button>
+                <button data-answer="Wrong">4. square brackets</button>
             </div>
         </div>
-        <div id="question-3" class="hidden-question">
-            <h2 class="question">Question</h2>
+        <div id="question-3" class="hidden-question question-answer">
+            <h2 class="question">Arrays in JavaScript can be used to store ________.</h2>
             <div class="answers">
-                <button class="answer-choice-1" class="answer-choices">1. answer</button>
-                <button class="answer-choice-2" class="answer-choices">2. answer</button>
-                <button class="answer-choice-3" class="answer-choices">3. answer</button>
-                <button class="answer-choice-4" class="answer-choices">4. answer</button>
+                <button data-answer="Wrong">1. numbers and strings</button>
+                <button data-answer="Wrong">2. other arrays</button>
+                <button data-answer="Wrong">3. booleans</button>
+                <button data-answer="Right">4. all of the above</button>
             </div>
         </div>
-        <div id="question-4" class="hidden-question">
-            <h2 class="question">Question</h2>
+        <div id="question-4" class="hidden-question question-answer">
+            <h2 class="question">String values must be enclosed within ________ when being assigned to variables.</h2>
             <div class="answers">
-                <button class="answer-choice-1" class="answer-choices">1. answer</button>
-                <button class="answer-choice-2" class="answer-choices">2. answer</button>
-                <button class="answer-choice-3" class="answer-choices">3. answer</button>
-                <button class="answer-choice-4" class="answer-choices">4. answer</button>
+                <button data-answer="Wrong">1. commas</button>
+                <button data-answer="Wrong">2. curly brackets</button>
+                <button data-answer="Right">3. quotes</button>
+                <button data-answer="Wrong">4. parenthesis</button>
             </div>
         </div>
-        <div id="question-5" class="hidden-question">
-            <h2 class="question">Question</h2>
+        <div id="question-5" class="hidden-question question-answer">
+            <h2 class="question">A very useful tool used during development and debugging for printing content to the debugger is:</h2>
             <div class="answers">
-                <button class="answer-choice-1" class="answer-choices">1. answer</button>
-                <button class="answer-choice-2" class="answer-choices">2. answer</button>
-                <button class="answer-choice-3" class="answer-choices">3. answer</button>
-                <button class="answer-choice-4" class="answer-choices">4. answer</button>
+                <button data-answer="Wrong">1. JavaScript</button>
+                <button data-answer="Wrong">2. terminal/bash</button>
+                <button data-answer="Wrong">3. for loops</button>
+                <button data-answer="Right">4. console.log</button>
             </div>
         </div>
-        <div id="question-6" class="hidden-question">
-            <h2 class="question">Question</h2>
-            <div class="answers">
-                <button class="answer-choice-1" class="answer-choices">1. answer</button>
-                <button class="answer-choice-2" class="answer-choices">2. answer</button>
-                <button class="answer-choice-3" class="answer-choices">3. answer</button>
-                <button class="answer-choice-4" class="answer-choices">4. answer</button>
-            </div>
-        </div>
-        <div id="question-7" class="hidden-question">
-            <h2 class="question">Question</h2>
-            <div class="answers">
-                <button class="answer-choice-1" class="answer-choices">1. answer</button>
-                <button class="answer-choice-2" class="answer-choices">2. answer</button>
-                <button class="answer-choice-3" class="answer-choices">3. answer</button>
-                <button class="answer-choice-4" class="answer-choices">4. answer</button>
-            </div>
-        </div>
-        <div id="question-8" class="hidden-question">
-            <h2 class="question">Question</h2>
-            <div class="answers">
-                <button class="answer-choice-1" class="answer-choices">1. answer</button>
-                <button class="answer-choice-2" class="answer-choices">2. answer</button>
-                <button class="answer-choice-3" class="answer-choices">3. answer</button>
-                <button class="answer-choice-4" class="answer-choices">4. answer</button>
-            </div>
-        </div>
-        <div id="question-9" class="hidden-question">
-            <h2 class="question">Question</h2>
-            <div class="answers">
-                <button class="answer-choice-1" class="answer-choices">1. answer</button>
-                <button class="answer-choice-2" class="answer-choices">2. answer</button>
-                <button class="answer-choice-3" class="answer-choices">3. answer</button>
-                <button class="answer-choice-4" class="answer-choices">4. answer</button>
-            </div>
-        </div>
-        <div id="question-10" class="hidden-question">
-            <h2 class="question">Question</h2>
-            <div class="answers">
-                <button class="answer-choice-1" class="answer-choices">1. answer</button>
-                <button class="answer-choice-2" class="answer-choices">2. answer</button>
-                <button class="answer-choice-3" class="answer-choices">3. answer</button>
-                <button class="answer-choice-4" class="answer-choices">4. answer</button>
-            </div>
+        <div id="answer-result">
+            <p>Result!</p>
         </div>
     </main>
+    <script src="./assets/js/main.js"></script>
 </body>
 </html>

@@ -1,0 +1,26 @@
+                                                                /* =============== MAIN ELEMENT LAYOUT ================ */
+#results-main {
+    display: flex;
+    align-items: flex-start;
+    font-size: x-large;
+}
+
+#userInitials {
+    font-size: larger;
+}
+
+                                                                /* ========== INITIAL SUBMISSION FORM LAYOUT ========== */
+#initialSubmissionForm {
+    display: flex;
+    align-items: center;
+}
+
+#initialSubmissionForm * {
+    margin-right: 10px;
+}
+
+#initialSubmitBtn {
+    font-size: large;
+    width: 100px;
+    height: 40px;
+}
